@@ -1,0 +1,13 @@
+numpy
+torch
+matplotlib
+scipy
+pandas
+jupyter
+scikit-learn
+sympy
+
+
+# & C:\Python_Projects\ds_env\Scripts\Activate.ps1
+
+# & C:\Python_Projects\ML-foundations\ml_found.env\Scripts\Activate.ps1
