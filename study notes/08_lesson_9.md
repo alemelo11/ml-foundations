@@ -1,7 +1,4 @@
----
-criado: 2026-04-30T07:22:39-04:00
-atualizado: 2026-04-30T07:40:25-04:00
----
+
 ### **Lesson 9: Machine Learning with Linear Algebra**
 
 This final lesson of the "Machine Learning Foundations" series synthesizes prior concepts to perform advanced operations and solve real-world problems such as data compression and linear regression.
@@ -22,9 +19,12 @@ This final lesson of the "Machine Learning Foundations" series synthesizes prior
     - The non-zero **singular values** are the **square roots of the eigenvalues** of both $AA^T$ and $A^TA$.
 
 
-![[Pasted image 20260430072517.png]]
+<<div align="center">
+  <img src="images/Pasted%20image%2020260430072517.png" width="600">
+</div>
 
----
+
+
 
 #### **9.2 Media File Compression**
 
@@ -35,7 +35,11 @@ SVD is a ubiquitous technique for **lossy data compression**, allowing models to
 - **Efficiency:** In a practical demonstration using an image of a dog, using only 64 singular vectors reduced the data footprint to **3.7% of the original size**.
 
 
-![[Pasted image 20260430072728.png]]
+<div align="center">
+  <img src="images/Pasted%20image%2020260430072728.png" width="600">
+</div>
+
+
 
 ---
 
@@ -47,7 +51,9 @@ The **Moore-Penrose Pseudoinverse ($A^+$)** is a generalization of the matrix in
 - **$D^+$ Calculation:** $D^+$ is derived by taking the **reciprocal of all non-zero elements** in the diagonal matrix $D$ and then transposing it.
 - **Implementation:** In code, this can be calculated automatically using **`np.linalg.pinv()`** in NumPy or **`torch.pinverse()`** in PyTorch.
 
-![[Pasted image 20260430073436.png]]
+<div align="center">
+  <img src="images/Pasted%20image%2020260430073436.png" width="500">
+  <br>
 
 
 ---
@@ -60,7 +66,9 @@ In machine learning, systems of equations are frequently **overdetermined**, mea
 - **Optimization Intuition:** For overdetermined systems, the pseudoinverse finds the solution $w$ that minimizes the **Euclidean distance ($L^2$ norm)** between the predicted and actual values ($Xw - y$).
 - **Practical Use:** This method allows a model to fit a regression line (calculating the slope $m$ and y-intercept $b$) using only linear algebra, bypassing iterative optimization like gradient descent for small datasets.
 
-![[Pasted image 20260430073644.png]]
+  <br>
+  <img src="images/Pasted%20image%2020260430073644.png" width="500">
+  <br>
 
 ---
 
@@ -72,8 +80,9 @@ In machine learning, systems of equations are frequently **overdetermined**, mea
 - **Mechanics:** It identifies **Principal Components**, which are vectors defining a new coordinate system where the first axis aligns with the **direction of maximum variance** in the data.
 - **Linear Algebra Foundations:** PCA relies on several previously learned concepts, including norms, orthogonal matrices, identity matrices, and the **trace operator**.
 - **Application:** In the provided Iris dataset example, PCA was used to reduce 4 features down to 2 principal components, which allowed for the visual segregation of three different flower species on a 2D scatter plot.
-
-![[Pasted image 20260430073806.png]]
+ <br>
+  <img src="images/Pasted%20image%2020260430073806.png" width="500">
+  <br>
 
 ---
 
@@ -87,5 +96,6 @@ To deepen expertise beyond the essential foundations, the following resources ar
     - **"Mathematics for Machine Learning"** by Deisenroth, Faisal, and Ong.
     - **"Linear Algebra Done Right"** by Sheldon Axler.
 - **Next Steps in the Journey:** The completion of these linear algebra modules prepares students for the next subjects in the _Machine Learning Foundations_ series: **Calculus I & II**, **Probability & Information Theory**, **Statistics**, and **Optimization**.
-
-![[Pasted image 20260430074023.png]]
+ <br>
+  <img src="images/Pasted%20image%2020260430074023.png" width="500">
+</div>
