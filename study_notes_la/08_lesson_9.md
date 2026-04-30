@@ -19,9 +19,10 @@ This final lesson of the "Machine Learning Foundations" series synthesizes prior
     - The non-zero **singular values** are the **square roots of the eigenvalues** of both $AA^T$ and $A^TA$.
 
 
-<<div align="center">
-  <img src="images/Pasted%20image%2020260430072517.png" width="600">
+<div align="center">
+  <img src="images/Pasted%20image%2020260430091752.png" width="600">
 </div>
+
 
 
 
