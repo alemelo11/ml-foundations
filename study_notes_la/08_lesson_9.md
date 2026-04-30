@@ -59,6 +59,11 @@ The **Moore-Penrose Pseudoinverse ($A^+$)** is a generalization of the matrix in
   <br>
 
 
+> #### Inverse Matrix
+> In linear algebra, a regular inverse matrix ($A^{-1}$) serves to:
+> * **Reverse Linear Transformations:** If a matrix $A$ represents a transformation (like rotation or scaling), $A^{-1}$ reverses that effect.
+> * **Solve Systems of Equations:** It allows for solving $Ax = b$ by calculating $x = A^{-1}b$, provided the matrix is square and non-singular.
+> * **Identify Non-Singularity:** The existence of a regular inverse proves that a matrix has a non-zero determinant and its columns are linearly independent.
 ---
 
 #### **9.4 Regression via Pseudoinversion**
